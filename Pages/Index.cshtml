@@ -1,0 +1,16 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <button type="button" id="btn_reg">읽은 책 등록</button>
+</div>
+
+<script>
+    $("#btn_reg").on('click',function(){
+        location.href = '@Url.Content("~/book/register")';
+    });
+</script>
